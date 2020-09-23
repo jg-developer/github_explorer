@@ -25,9 +25,8 @@ const Dashboard: React.FC = () => {
     );
     if (storagedRepositories) {
       return JSON.parse(storagedRepositories);
-    } else {
-      return [];
     }
+    return [];
   });
 
   useEffect(() => {
